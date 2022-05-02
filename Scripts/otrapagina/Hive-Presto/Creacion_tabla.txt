@@ -1,0 +1,11 @@
+create table otrapagina(
+    > title string,
+    > categoria string,
+    > enlance string
+    > )
+    > ROW FORMAT DELIMITED
+    > fields terminated by ","
+    > escaped by "\\"
+    > lines terminated by "\n"
+    >  location "s3://bucketotra//news/final/periodico=bbc/year=2022/month=5/day=2/otrapagina.csv"
+    > TBLPROPERTIES ("skip.header.line.count"="1");
